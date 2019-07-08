@@ -1,0 +1,63 @@
+.carousel-booking{
+    position: relative;
+    .carousel{
+
+        .carousel-indicators{
+            bottom: 70px;
+        }
+
+        .carousel-inner{
+            .carousel-item{
+                position: relative;
+                img{
+                    width: 100%;
+                    // height: 680px;
+                }
+                .backgroundLinear{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(to top,#000,transparent 40%);
+                    top: 0;
+                }
+            }        
+        }     
+    }
+    
+    .booking-ticket{
+        padding: 30px 0;
+        background-color: #00C3B7;
+        width: 77%;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,50%);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 188, 212, 0.92);
+        z-index: 2;
+        .form-control{
+            height: 44px;
+            background-color: #feffff29;
+            border: 2px solid white;
+            color: black;
+            font-size: 16px;
+
+            &:focus{
+                box-shadow: none;
+            }
+        }
+
+        .btn-booking{
+            width: 100%;
+            color: black;
+            padding: 8px;
+            border: 2px solid white;
+
+            &:hover{
+                color: #000;
+                background-color: white;
+            }
+        }
+    }
+}
